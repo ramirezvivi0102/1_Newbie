@@ -1,0 +1,83 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-2 {
+  flex: 1;
+}
+
+.product-preview img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-preview {
+  padding: 20px;
+}
+
+.product-info {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.category {
+  color: hsl(212, 21%, 14%);
+}
+
+.product-name {
+  font-size: 50px;
+  color: hsl(212, 21%, 14%);
+}
+
+.product-description {
+  font-family: cursive;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  justify-content: space-around;
+}
+
+.discount-price {
+  font-size: 28px;
+  color: hsl(158, 36%, 37%);
+  font-weight: bold;
+}
+
+.original-price {
+  font-size: 20px;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+.add-to-cart {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(30, 38%, 92%);
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  border: 3px solid hsl(158, 36%, 37%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  .col-2 {
+    flex: 100%;
+  }
+
+  .product-info {
+    max-width: none;
+  }
+}
